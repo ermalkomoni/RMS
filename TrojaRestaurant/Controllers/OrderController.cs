@@ -15,7 +15,7 @@ namespace TrojaRestaurant.Controllers
         public async Task<IActionResult> Index()
         {
             var allOrders = await _context.Orders.ToListAsync();
-            return View();
+            return View(allOrders);
         }
     }
 }
