@@ -12,7 +12,7 @@ using TrojaRestaurant.Data;
 namespace TrojaRestaurant.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20221224204635_CreateInitial")]
+    [Migration("20230108145952_CreateInitial")]
     partial class CreateInitial
     {
         /// <inheritdoc />
@@ -32,6 +32,12 @@ namespace TrojaRestaurant.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedDateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
 
                     b.Property<int?>("MenuId")
                         .HasColumnType("int");
@@ -109,12 +115,6 @@ namespace TrojaRestaurant.Migrations
                     b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CompletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DeliveryTime")
-                        .HasColumnType("datetime2");
 
                     b.Property<bool>("IsComplete")
                         .HasColumnType("bit");

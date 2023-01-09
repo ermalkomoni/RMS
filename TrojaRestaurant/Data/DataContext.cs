@@ -20,6 +20,7 @@ namespace TrojaRestaurant.Data
         {
             base.OnModelCreating(modelBuilder);
         }
+
         public DataContext(DbContextOptions options) : base(options) {}
         public DbSet<Category> Categories { get; set; }
         public DbSet<Meal> Meals { get; set; }

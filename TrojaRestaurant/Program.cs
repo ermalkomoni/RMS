@@ -11,6 +11,8 @@ builder.Services.AddDbContext<DataContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+//Adding Razor Pages
+//builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
     var app = builder.Build();
 

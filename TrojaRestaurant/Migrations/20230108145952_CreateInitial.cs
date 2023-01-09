@@ -33,9 +33,7 @@ namespace TrojaRestaurant.Migrations
                     OrderNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ShippingPrice = table.Column<double>(type: "float", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsComplete = table.Column<bool>(type: "bit", nullable: false),
-                    CompletedOn = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    DeliveryTime = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    IsComplete = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -67,6 +65,8 @@ namespace TrojaRestaurant.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DisplayOrder = table.Column<int>(type: "int", nullable: false),
+                    CreatedDateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     MenuId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>

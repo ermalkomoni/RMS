@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vKR96IwTcDcsVGRNK0nUHoE/9+VTxGfXQyCdYb9bMEk=",
+  "Hash": "cyPnAZZsMpT6MeUr6tDne1K/HKp6wimc4sW+D4oxF0M=",
   "Source": "TrojaRestaurant",
   "BasePath": "_content/TrojaRestaurant",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TrojaRestaurant.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "TrojaRestaurant",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\",
+      "BasePath": "_content/TrojaRestaurant",
+      "RelativePath": "css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
       "Identity": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\css\\site.css",
       "SourceId": "TrojaRestaurant",
       "SourceType": "Discovered",
@@ -66,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\css\\style.css",
+      "SourceId": "TrojaRestaurant",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\",
+      "BasePath": "_content/TrojaRestaurant",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\favicon.ico",
