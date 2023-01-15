@@ -1,0 +1,17 @@
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\TrojaRestaurant.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\TrojaRestaurant.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\TrojaRestaurant.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\TrojaRestaurant.DataAccess.AssemblyInfo.cs
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\TrojaRestaurant.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\bin\Debug\net6.0\TrojaRestaurant.DataAccess.deps.json
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\bin\Debug\net6.0\TrojaRestaurant.DataAccess.runtimeconfig.json
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\bin\Debug\net6.0\TrojaRestaurant.DataAccess.dll
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\bin\Debug\net6.0\TrojaRestaurant.DataAccess.pdb
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\bin\Debug\net6.0\TrojaRestaurant.Models.dll
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\bin\Debug\net6.0\TrojaRestaurant.Models.pdb
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\TrojaRestaurant.DataAccess.csproj.CopyComplete
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\TrojaRestaurant.DataAccess.dll
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\refint\TrojaRestaurant.DataAccess.dll
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\TrojaRestaurant.DataAccess.pdb
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\TrojaRestaurant.DataAccess.genruntimeconfig.cache
+C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.DataAccess\obj\Debug\net6.0\ref\TrojaRestaurant.DataAccess.dll
