@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrojaRestaurant", "TrojaRestaurant\TrojaRestaurant.csproj", "{335E623C-1CBD-42C3-BC1C-4C818DFAD4B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrojaRestaurant", "TrojaRestaurant\TrojaRestaurant.csproj", "{335E623C-1CBD-42C3-BC1C-4C818DFAD4B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrojaRestaurant.DataAccess", "TrojaRestaurant.DataAccess\TrojaRestaurant.DataAccess.csproj", "{4C929277-6D7D-4F6A-A21A-56FC0D16A757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrojaRestaurant.Models", "TrojaRestaurant.Models\TrojaRestaurant.Models.csproj", "{310F3063-E160-4D2E-9BE1-AE4EE992523B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrojaRestaurant.Utility", "TrojaRestaurant.Utility\TrojaRestaurant.Utility.csproj", "{860161AE-8A6B-45F0-A7CB-E1905945281D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{335E623C-1CBD-42C3-BC1C-4C818DFAD4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{335E623C-1CBD-42C3-BC1C-4C818DFAD4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{335E623C-1CBD-42C3-BC1C-4C818DFAD4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C929277-6D7D-4F6A-A21A-56FC0D16A757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C929277-6D7D-4F6A-A21A-56FC0D16A757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C929277-6D7D-4F6A-A21A-56FC0D16A757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C929277-6D7D-4F6A-A21A-56FC0D16A757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310F3063-E160-4D2E-9BE1-AE4EE992523B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310F3063-E160-4D2E-9BE1-AE4EE992523B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310F3063-E160-4D2E-9BE1-AE4EE992523B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310F3063-E160-4D2E-9BE1-AE4EE992523B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{860161AE-8A6B-45F0-A7CB-E1905945281D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{860161AE-8A6B-45F0-A7CB-E1905945281D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{860161AE-8A6B-45F0-A7CB-E1905945281D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{860161AE-8A6B-45F0-A7CB-E1905945281D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

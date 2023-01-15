@@ -24,8 +24,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0 pe-4">
                     <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    <a class="nav-item nav-link" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
-                    <a class="nav-item nav-link" asp-area="" asp-controller="Order" asp-action="Index">Order</a>
+                    <a class="nav-item nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
+                    <a class="nav-item nav-link" asp-area="Customer" asp-controller="Order" asp-action="Index">Order</a>
+                    <a class="nav-item nav-link" asp-area="Admin" asp-controller="Menu" asp-action="Index">Menu</a>
                  @* <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
                     <a class="nav-item nav-link" asp-area="" asp-controller="Menu" asp-action="Index">Menu</a>
                     <a class="nav-item nav-link" asp-area="" asp-controller="Reservation" asp-action="Book">Book a table</a>*@
@@ -43,9 +44,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted bg-dark">
         <div class="container">
-            &copy; 2022 - TrojaRestaurant - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - TrojaRestaurant 
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

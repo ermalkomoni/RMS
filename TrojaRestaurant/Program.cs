@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using TrojaRestaurant.Data;
+using TrojaRestaurant.DataAccess;
+using TrojaRestaurant.DataAccess.Repository;
+using TrojaRestaurant.DataAccess.Repository.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,8 @@ builder.Services.AddDbContext<DataContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 //Adding Razor Pages
 //builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
@@ -33,7 +37,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 //seed data
 DbInitializer.seed(app);
