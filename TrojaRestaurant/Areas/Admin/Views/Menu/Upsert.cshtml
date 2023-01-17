@@ -3,7 +3,7 @@
 <form method="post" asp-action="Upsert" enctype="multipart/form-data">
     <div class="border p-3 mt-4 row"> 
         <div class="row pb-2">
-            <h2 class="text-primary">Edit Menu</h2>
+            <h2 class="text-primary">@(Model.Menu.Id!=0?"Update":"Create") Menu</h2>
             <hr />
         </div>
         <div class="mb-3">
@@ -20,7 +20,7 @@
         </div>
         <div class="mb-3">
              <label asp-for="Menu.ImageUrl"></label>
-             <input  type="file" class="form-control"/>
+             <input  type="file" id="uploadBox" class="form-control"/>
         </div>
         <div class="mb-3 col-6">
              <label asp-for="Menu.Price"></label>
@@ -36,13 +36,35 @@
              <!--Adding Validation-->
              <span asp-validation-for="Menu.CategoryId" class="text-danger"></span>
         </div>
-        <button type="submit" class="btn btn-primary style" style="width=150px;">Update</button>
-        <!--<a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width=150px;">Back to List</a>-->
+        <!--Submit Button-->
+        <div class="col-12">
+        @if (Model.Menu.Id != 0)
+        {
+            <button type="submit" class="btn btn-primary style" style="width=150px;">Update</button>
+        }
+        else{
+            <button type="submit" onclick="return ValidateInput()" class="btn btn-primary style" style="width=150px;">Create</button>
+        }
+        </div>
     </div>
 </form>
 
 @section Scripts {
     @{
-        <partial name="_ValidationScriptsPartial.cshtml" />
+    <partial name="_ValidationScriptsPartial.cshtml" />
     }
+    <script>
+         function ValidateInput(){
+             if (document.getElementById("uploadBox").value == "") {
+                 Swal.fire({
+                     icon: 'error',
+                     title: 'Oops...',
+                     text: 'Please upload an Image!'
+                 });
+                 return false;
+             }
+             return true;
+
+         }
+    </script>
 }

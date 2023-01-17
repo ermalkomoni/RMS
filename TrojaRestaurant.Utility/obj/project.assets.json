@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Ermal\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Utility\\TrojaRestaurant.Utility.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\ermal666\\RMS\\TrojaRestaurant.Utility\\TrojaRestaurant.Utility.csproj",
       "projectName": "TrojaRestaurant.Utility",
-      "projectPath": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Utility\\TrojaRestaurant.Utility.csproj",
-      "packagesPath": "C:\\Users\\Ermal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Utility\\obj\\",
+      "projectPath": "C:\\Users\\Asus\\source\\repos\\ermal666\\RMS\\TrojaRestaurant.Utility\\TrojaRestaurant.Utility.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\source\\repos\\ermal666\\RMS\\TrojaRestaurant.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ermal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.308\\RuntimeIdentifierGraph.json"
       }
     }
   }

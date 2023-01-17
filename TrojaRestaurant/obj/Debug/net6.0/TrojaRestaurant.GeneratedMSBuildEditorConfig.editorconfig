@@ -8,81 +8,81 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TrojaRestaurant
 build_property.RootNamespace = TrojaRestaurant
-build_property.ProjectDir = C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant\
+build_property.ProjectDir = C:\Users\Asus\source\repos\ermal666\RMS\TrojaRestaurant\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant
+build_property.MSBuildProjectDirectory = C:\Users\Asus\source\repos\ermal666\RMS\TrojaRestaurant
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Admin/Views/Category/Create.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Admin/Views/Category/Delete.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Admin/Views/Category/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Admin/Views/Category/Edit.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Admin/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Admin/Views/Category/Index.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Admin/Views/Menu/Index.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Admin/Views/Menu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Admin/Views/Menu/Upsert.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Admin/Views/Menu/Upsert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxVcHNlcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Customer/Views/Home/Index.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Customer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Customer/Views/Home/Privacy.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Customer/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Customer/Views/Order/Index.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Customer/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Customer/Views/_ViewImports.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Customer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Areas/Customer/Views/_ViewStart.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Areas/Customer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Views/Shared/Error.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Views/_ViewImports.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Views/_ViewStart.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ermal/Source/Repos/TrojaRestaurant/TrojaRestaurant/Views/Shared/_Layout.cshtml]
+[C:/Users/Asus/source/repos/ermal666/RMS/TrojaRestaurant/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ra00vov8id
