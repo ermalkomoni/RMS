@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Z5dKkYHyejbVnZZ2tmAVCxXLFWSUJ5q7fHNlufeQJT6oMzSN8bcDjanQxK8uIXMOpadzynJ94o8E3D4pc58lPQ==",
+  "dgSpecHash": "SwqL3HNIv0BkGMvsUWEJEu3n8JyyEej89XkPhK8fqqLy5dfmq00i1plhmjIMfLV9wF/YqUVqJpB+g5jlUYBAkg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant\\TrojaRestaurant.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ermal\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Ermal\\.nuget\\packages\\documentformat.openxml\\2.19.0\\documentformat.openxml.2.19.0.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
@@ -166,6 +167,7 @@
     "C:\\Users\\Ermal\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0\\system.io.compression.zipfile.4.3.0.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\Ermal\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",

@@ -1,5 +1,6 @@
 
-﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TrojaRestaurant.Models
@@ -14,10 +15,13 @@ namespace TrojaRestaurant.Models
         [Required]
         public double Price { get; set; }
         [Required]
+        [ValidateNever]
         public string ImageUrl { get; set; }
         [Required]
+        [Display(Name = "Category")]
         public int CategoryId { get; set; }     //foreign key
         [ForeignKey("CategoryId")]
+        [ValidateNever]
         public Category Category { get; set; }  //foreign key
     }
 }

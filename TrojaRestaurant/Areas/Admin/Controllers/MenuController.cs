@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DocumentFormat.OpenXml.Drawing.Charts;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using TrojaRestaurant.DataAccess;
 using TrojaRestaurant.DataAccess.Repository.IRepository;
@@ -10,18 +11,19 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
     public class MenuController : Controller
     {
         private readonly IUnitOfWork _unitOfWork; //in the course it's used "_db"
+        private readonly IWebHostEnvironment _hostEnvironment;
 
-        public MenuController(IUnitOfWork unitOfWork)
+        public MenuController(IUnitOfWork unitOfWork, IWebHostEnvironment hostEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _hostEnvironment = hostEnvironment;
         }
 
         public IActionResult Index()
         {
-            IEnumerable<Menu> MenuData = _unitOfWork.Menu.GetAll();
-            return View(MenuData);
+            return View();
         }
-        //Edit
+        //GET
         public IActionResult Upsert(int? id)
         {
             MenuViewModel menuViewModel = new()
@@ -38,15 +40,16 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
             
             if (id == null || id == 0)
             {
-                //create product
+                //create menu
                 /*ViewBag.CategoryList = CategoryList;*/
                 return View(menuViewModel);
             }
             else
             {
-                //update product
-            }
-            return View(menuViewModel);
+                //update menu
+                menuViewModel.Menu = _unitOfWork.Menu.GetFirstOrDefault(u=>u.Id == id);
+                return View(menuViewModel);
+            } 
         }
 
         //POST
@@ -56,44 +59,80 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                //_unitOfWork.Category.Update(obj);
+                //uploading image to folder
+                string wwwRootPath = _hostEnvironment.WebRootPath;
+                if (file != null)
+                {
+                    string fileName = Guid.NewGuid().ToString();
+                    var uploads = Path.Combine(wwwRootPath, @"images\menus");
+                    var extension = Path.GetExtension(file.FileName);
+
+                    //when we are updating an image we first delete the existing image
+                    //removing old image
+                    if(obj.Menu.ImageUrl != null)
+                    {
+                        var oldImagePath = Path.Combine(wwwRootPath, obj.Menu.ImageUrl.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
+
+                    //coping files
+                    using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+                    {
+                        file.CopyTo(fileStreams);
+                    }
+                    //saving to database, updating url
+                    obj.Menu.ImageUrl = @"\images\menus\" + fileName + extension;
+                }
+                if(obj.Menu.Id == 0) 
+                { 
+                    _unitOfWork.Menu.Add(obj.Menu);
+                }
+                else
+                {
+                    _unitOfWork.Menu.Update(obj.Menu);
+                }
                 _unitOfWork.Save();
+                TempData["success"] = "Menu created succesfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
         }
 
+
+        //adding WEB API
+        #region API CALLS
+        [HttpGet]
+
+        public IActionResult GetAll()
+        {
+            var menuList = _unitOfWork.Menu.GetAll(includeProperties:"Category");
+            return Json(new { data = menuList });
+        }
+
         //Delete
+
+        [HttpDelete]
         public IActionResult Delete(int? id)
         {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            var categoryFromDbFirst = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
-
-            if (categoryFromDbFirst == null)
-            {
-                return NotFound();
-            }
-            return View(categoryFromDbFirst);
-        }
-
-        //Update
-
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeletePOST(int? id)
-        {
-            var obj = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
+            var obj = _unitOfWork.Menu.GetFirstOrDefault(u => u.Id == id);
             if (obj == null)
             {
-                return NotFound();
+                return Json(new { success = false, message = "Error while deleting" });
             }
 
-            _unitOfWork.Category.Remove(obj);
+            var oldImagePath = Path.Combine(_hostEnvironment.WebRootPath, obj.ImageUrl.TrimStart('\\'));
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath);
+            }
+
+            _unitOfWork.Menu.Remove(obj); 
             _unitOfWork.Save();
-            return RedirectToAction("Index");
+            return Json(new { success = true, message = "Delete Successful" });
         }
+        #endregion
     }
 }

@@ -29,7 +29,6 @@ namespace TrojaRestaurant.DataAccess
         public DbSet<Order> Orders { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
         //public DbSet<Test> Tests { get; set; }
-        //test
         public object SingleOrDefault(Func<object, bool> value)
         {
             throw new NotImplementedException();

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,8 @@ namespace TrojaRestaurant.Models.ViewModels
     public class MenuViewModel
     {
         public Menu Menu { get; set; }
+
+        [ValidateNever]
         public IEnumerable<SelectListItem> CategoryList { get; set; }
     }
 }
