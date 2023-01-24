@@ -1,0 +1,42 @@
+﻿@model Order
+
+<form method="post">
+    <div class="border p-3 mt-4"> 
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Order</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+             <label asp-for="OrderNumber"></label>
+             <input asp-for="OrderNumber" class="form-control"/>
+             <!--Adding Validation-->
+             <span asp-validation-for="OrderNumber" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+             <label asp-for="Address"></label>
+             <input asp-for="Address" class="form-control"/>
+             <!--Adding Validation-->
+             <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+             <label asp-for="ShippingPrice"></label>
+             <input asp-for="ShippingPrice" class="form-control"/>
+             <!--Adding Validation-->
+             <span asp-validation-for="ShippingPrice" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+             <label asp-for="TotalPrice"></label>
+             <input asp-for="TotalPrice" class="form-control"/>
+             <!--Adding Validation-->
+             <span asp-validation-for="TotalPrice" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary style" style="width=150px;">Create</button>
+        <!--<a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width=150px;">Back to List</a>-->
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial.cshtml" />
+    }
+}
