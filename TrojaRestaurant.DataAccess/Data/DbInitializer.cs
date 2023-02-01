@@ -44,8 +44,8 @@ namespace TrojaRestaurant.DataAccess
                     //{
 
                     //}
-                    //Menu
-                    //if (!context.Menus.Any())
+                    //Product
+                    //if (!context.Products.Any())
                     //{
 
                     //}

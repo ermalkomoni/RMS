@@ -15,12 +15,15 @@ namespace TrojaRestaurant.DataAccess.Repository
         public UnitOfWork(DataContext context)
         {
             _context = context;
-            Category = new CategoryRepository(_context);
-            Menu = new MenuRepository(_context);
+            Category = new CategoryRepository(_context);   //dbSet
+            Product = new ProductRepository(_context);           //dbSet
+            Order = new OrderRepository(_context);         //dbSet
         }
         public ICategoryRepository Category { get; private set; }
-        public IMenuRepository Menu { get; private set; }
-        public void Save()
+        public IProductRepository Product { get; private set; }
+        public IOrderRepository Order { get; }
+
+        public void Save()                                 //SaveChanges()
         {
             _context.SaveChanges();
         }

@@ -17,7 +17,7 @@ namespace TrojaRestaurant.DataAccess.Repository
         public Repository(DataContext context)
         {
             _context = context;
-            _context.Menus.Include(u => u.Category);
+            _context.Products.Include(u => u.Category);
             this.dbSet = _context.Set<T>();
         }
 
@@ -31,7 +31,7 @@ namespace TrojaRestaurant.DataAccess.Repository
         {
             IQueryable<T> query = dbSet;
             //including properties
-            if(includeProperties != null)
+            if (includeProperties != null)
             {
                 foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {

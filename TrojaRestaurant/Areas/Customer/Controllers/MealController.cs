@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using TrojaRestaurant.DataAccess;
 
-namespace TrojaRestaurant.Areas.Customer.Controllers
+namespace TrojaRestaurant.Areas.Admin.Controllers
 {
     public class MealController : Controller
     {

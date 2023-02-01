@@ -365,7 +365,7 @@
     mouseleave: 'mouseout'
   };
   const customEventsRegex = /^(mouseenter|mouseleave)/i;
-  const nativeEvents = new Set(['click', 'dblclick', 'mouseup', 'mousedown', 'contextmenu', 'mousewheel', 'DOMMouseScroll', 'mouseover', 'mouseout', 'mousemove', 'selectstart', 'selectend', 'keydown', 'keypress', 'keyup', 'orientationchange', 'touchstart', 'touchmove', 'touchend', 'touchcancel', 'pointerdown', 'pointermove', 'pointerup', 'pointerleave', 'pointercancel', 'gesturestart', 'gesturechange', 'gestureend', 'focus', 'blur', 'change', 'reset', 'select', 'submit', 'focusin', 'focusout', 'load', 'unload', 'beforeunload', 'resize', 'move', 'DOMContentLoaded', 'readystatechange', 'error', 'abort', 'scroll']);
+  const nativeEvents = new Set(['click', 'dblclick', 'mouseup', 'mousedown', 'contextproduct', 'mousewheel', 'DOMMouseScroll', 'mouseover', 'mouseout', 'mousemove', 'selectstart', 'selectend', 'keydown', 'keypress', 'keyup', 'orientationchange', 'touchstart', 'touchmove', 'touchend', 'touchcancel', 'pointerdown', 'pointermove', 'pointerup', 'pointerleave', 'pointercancel', 'gesturestart', 'gesturechange', 'gestureend', 'focus', 'blur', 'change', 'reset', 'select', 'submit', 'focusin', 'focusout', 'load', 'unload', 'beforeunload', 'resize', 'move', 'DOMContentLoaded', 'readystatechange', 'error', 'abort', 'scroll']);
   /**
    * ------------------------------------------------------------------------
    * Private methods
@@ -1981,9 +1981,9 @@
   const CLASS_NAME_DROPSTART = 'dropstart';
   const CLASS_NAME_NAVBAR = 'navbar';
   const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown"]';
-  const SELECTOR_MENU = '.dropdown-menu';
+  const SELECTOR_MENU = '.dropdown-product';
   const SELECTOR_NAVBAR_NAV = '.navbar-nav';
-  const SELECTOR_VISIBLE_ITEMS = '.dropdown-menu .dropdown-item:not(.disabled):not(:disabled)';
+  const SELECTOR_VISIBLE_ITEMS = '.dropdown-product .dropdown-item:not(.disabled):not(:disabled)';
   const PLACEMENT_TOP = isRTL() ? 'top-end' : 'top-start';
   const PLACEMENT_TOPEND = isRTL() ? 'top-start' : 'top-end';
   const PLACEMENT_BOTTOM = isRTL() ? 'bottom-end' : 'bottom-start';
@@ -2017,7 +2017,7 @@
       super(element);
       this._popper = null;
       this._config = this._getConfig(config);
-      this._menu = this._getMenuElement();
+      this._product = this._getProductElement();
       this._inNavbar = this._detectNavbar();
     } // Getters
 
@@ -2040,7 +2040,7 @@
     }
 
     show() {
-      if (isDisabled(this._element) || this._isShown(this._menu)) {
+      if (isDisabled(this._element) || this._isShown(this._product)) {
         return;
       }
 
@@ -2056,7 +2056,7 @@
       const parent = Dropdown.getParentFromElement(this._element); // Totally disable Popper for Dropdowns in Navbar
 
       if (this._inNavbar) {
-        Manipulator.setDataAttribute(this._menu, 'popper', 'none');
+        Manipulator.setDataAttribute(this._product, 'popper', 'none');
       } else {
         this._createPopper(parent);
       } // If this is a touch-enabled device we add extra
@@ -2073,7 +2073,7 @@
 
       this._element.setAttribute('aria-expanded', true);
 
-      this._menu.classList.add(CLASS_NAME_SHOW$6);
+      this._product.classList.add(CLASS_NAME_SHOW$6);
 
       this._element.classList.add(CLASS_NAME_SHOW$6);
 
@@ -2081,7 +2081,7 @@
     }
 
     hide() {
-      if (isDisabled(this._element) || !this._isShown(this._menu)) {
+      if (isDisabled(this._element) || !this._isShown(this._product)) {
         return;
       }
 
@@ -2126,13 +2126,13 @@
         this._popper.destroy();
       }
 
-      this._menu.classList.remove(CLASS_NAME_SHOW$6);
+      this._product.classList.remove(CLASS_NAME_SHOW$6);
 
       this._element.classList.remove(CLASS_NAME_SHOW$6);
 
       this._element.setAttribute('aria-expanded', 'false');
 
-      Manipulator.removeDataAttribute(this._menu, 'popper');
+      Manipulator.removeDataAttribute(this._product, 'popper');
       EventHandler.trigger(this._element, EVENT_HIDDEN$4, relatedTarget);
     }
 
@@ -2169,10 +2169,10 @@
       const popperConfig = this._getPopperConfig();
 
       const isDisplayStatic = popperConfig.modifiers.find(modifier => modifier.name === 'applyStyles' && modifier.enabled === false);
-      this._popper = Popper__namespace.createPopper(referenceElement, this._menu, popperConfig);
+      this._popper = Popper__namespace.createPopper(referenceElement, this._product, popperConfig);
 
       if (isDisplayStatic) {
-        Manipulator.setDataAttribute(this._menu, 'popper', 'static');
+        Manipulator.setDataAttribute(this._product, 'popper', 'static');
       }
     }
 
@@ -2180,7 +2180,7 @@
       return element.classList.contains(CLASS_NAME_SHOW$6);
     }
 
-    _getMenuElement() {
+    _getProductElement() {
       return SelectorEngine.next(this._element, SELECTOR_MENU)[0];
     }
 
@@ -2196,7 +2196,7 @@
       } // We need to trim the value because custom properties can also include spaces
 
 
-      const isEnd = getComputedStyle(this._menu).getPropertyValue('--bs-position').trim() === 'end';
+      const isEnd = getComputedStyle(this._product).getPropertyValue('--bs-position').trim() === 'end';
 
       if (parentDropdown.classList.contains(CLASS_NAME_DROPUP)) {
         return isEnd ? PLACEMENT_TOPEND : PLACEMENT_TOP;
@@ -2253,11 +2253,11 @@
       };
     }
 
-    _selectMenuItem({
+    _selectProductItem({
       key,
       target
     }) {
-      const items = SelectorEngine.find(SELECTOR_VISIBLE_ITEMS, this._menu).filter(isVisible);
+      const items = SelectorEngine.find(SELECTOR_VISIBLE_ITEMS, this._product).filter(isVisible);
 
       if (!items.length) {
         return;
@@ -2285,7 +2285,7 @@
       });
     }
 
-    static clearMenus(event) {
+    static clearProducts(event) {
       if (event && (event.button === RIGHT_MOUSE_BUTTON || event.type === 'keyup' && event.key !== TAB_KEY$1)) {
         return;
       }
@@ -2309,14 +2309,14 @@
 
         if (event) {
           const composedPath = event.composedPath();
-          const isMenuTarget = composedPath.includes(context._menu);
+          const isProductTarget = composedPath.includes(context._product);
 
-          if (composedPath.includes(context._element) || context._config.autoClose === 'inside' && !isMenuTarget || context._config.autoClose === 'outside' && isMenuTarget) {
+          if (composedPath.includes(context._element) || context._config.autoClose === 'inside' && !isProductTarget || context._config.autoClose === 'outside' && isProductTarget) {
             continue;
-          } // Tab navigation through the dropdown menu or events from contained inputs shouldn't close the menu
+          } // Tab navigation through the dropdown product or events from contained inputs shouldn't close the product
 
 
-          if (context._menu.contains(event.target) && (event.type === 'keyup' && event.key === TAB_KEY$1 || /input|select|option|textarea|form/i.test(event.target.tagName))) {
+          if (context._product.contains(event.target) && (event.type === 'keyup' && event.key === TAB_KEY$1 || /input|select|option|textarea|form/i.test(event.target.tagName))) {
             continue;
           }
 
@@ -2340,7 +2340,7 @@
       //  - If space key => not a dropdown command
       //  - If key is other than escape
       //    - If key is not up or down => not a dropdown command
-      //    - If trigger inside the menu => not a dropdown command
+      //    - If trigger inside the product => not a dropdown command
       if (/input|textarea/i.test(event.target.tagName) ? event.key === SPACE_KEY || event.key !== ESCAPE_KEY$2 && (event.key !== ARROW_DOWN_KEY && event.key !== ARROW_UP_KEY || event.target.closest(SELECTOR_MENU)) : !REGEXP_KEYDOWN.test(event.key)) {
         return;
       }
@@ -2371,13 +2371,13 @@
           instance.show();
         }
 
-        instance._selectMenuItem(event);
+        instance._selectProductItem(event);
 
         return;
       }
 
       if (!isActive || event.key === SPACE_KEY) {
-        Dropdown.clearMenus();
+        Dropdown.clearProducts();
       }
     }
 
@@ -2391,8 +2391,8 @@
 
   EventHandler.on(document, EVENT_KEYDOWN_DATA_API, SELECTOR_DATA_TOGGLE$3, Dropdown.dataApiKeydownHandler);
   EventHandler.on(document, EVENT_KEYDOWN_DATA_API, SELECTOR_MENU, Dropdown.dataApiKeydownHandler);
-  EventHandler.on(document, EVENT_CLICK_DATA_API$3, Dropdown.clearMenus);
-  EventHandler.on(document, EVENT_KEYUP_DATA_API, Dropdown.clearMenus);
+  EventHandler.on(document, EVENT_CLICK_DATA_API$3, Dropdown.clearProducts);
+  EventHandler.on(document, EVENT_KEYUP_DATA_API, Dropdown.clearProducts);
   EventHandler.on(document, EVENT_CLICK_DATA_API$3, SELECTOR_DATA_TOGGLE$3, function (event) {
     event.preventDefault();
     Dropdown.getOrCreateInstance(this).toggle();
@@ -4592,7 +4592,7 @@
   const EVENT_SHOW$1 = `show${EVENT_KEY$1}`;
   const EVENT_SHOWN$1 = `shown${EVENT_KEY$1}`;
   const EVENT_CLICK_DATA_API = `click${EVENT_KEY$1}${DATA_API_KEY}`;
-  const CLASS_NAME_DROPDOWN_MENU = 'dropdown-menu';
+  const CLASS_NAME_DROPDOWN_MENU = 'dropdown-product';
   const CLASS_NAME_ACTIVE = 'active';
   const CLASS_NAME_FADE$1 = 'fade';
   const CLASS_NAME_SHOW$1 = 'show';
@@ -4602,7 +4602,7 @@
   const SELECTOR_ACTIVE_UL = ':scope > li > .active';
   const SELECTOR_DATA_TOGGLE = '[data-bs-toggle="tab"], [data-bs-toggle="pill"], [data-bs-toggle="list"]';
   const SELECTOR_DROPDOWN_TOGGLE = '.dropdown-toggle';
-  const SELECTOR_DROPDOWN_ACTIVE_CHILD = ':scope > .dropdown-menu .active';
+  const SELECTOR_DROPDOWN_ACTIVE_CHILD = ':scope > .dropdown-product .active';
   /**
    * ------------------------------------------------------------------------
    * Class Definition

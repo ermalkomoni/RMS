@@ -9,7 +9,8 @@ namespace TrojaRestaurant.DataAccess.Repository.IRepository
     public interface IUnitOfWork
     {
         ICategoryRepository Category { get; }
-        IMenuRepository Menu { get; }
+        IProductRepository Product { get; }
+        IOrderRepository Order { get; }
         void Save();
     }
 }

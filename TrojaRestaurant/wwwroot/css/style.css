@@ -226,7 +226,7 @@
     }
 
 
-/*** Food Menu ***/
+/*** Food Product ***/
 .nav-pills .nav-item .active {
     border-bottom: 2px solid var(--primary);
 }
@@ -466,13 +466,13 @@
         color: var(--light);
     }
 
-.footer .footer-menu a {
+.footer .footer-product a {
     margin-right: 15px;
     padding-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, .1);
 }
 
-    .footer .footer-menu a:last-child {
+    .footer .footer-product a:last-child {
         margin-right: 0;
         padding-right: 0;
         border-right: none;

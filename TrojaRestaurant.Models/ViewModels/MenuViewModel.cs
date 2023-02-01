@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace TrojaRestaurant.Models.ViewModels
 {
-    public class MenuViewModel
+    public class ProductViewModel
     {
-        public Menu Menu { get; set; }
+        public Product Product { get; set; }
 
         [ValidateNever]
         public IEnumerable<SelectListItem> CategoryList { get; set; }

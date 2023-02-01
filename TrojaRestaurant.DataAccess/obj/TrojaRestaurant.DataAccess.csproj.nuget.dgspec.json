@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.DataAccess\\TrojaRestaurant.DataAccess.csproj": {}
+    "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.DataAccess\\TrojaRestaurant.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.DataAccess\\TrojaRestaurant.DataAccess.csproj": {
+    "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.DataAccess\\TrojaRestaurant.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.DataAccess\\TrojaRestaurant.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.DataAccess\\TrojaRestaurant.DataAccess.csproj",
         "projectName": "TrojaRestaurant.DataAccess",
-        "projectPath": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.DataAccess\\TrojaRestaurant.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.DataAccess\\TrojaRestaurant.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Ermal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ermal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {
-                "projectPath": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj"
+              "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {
+                "projectPath": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj"
               }
             }
           }
@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -86,14 +90,14 @@
         }
       }
     },
-    "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {
+    "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
         "projectName": "TrojaRestaurant.Models",
-        "projectPath": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
+        "projectPath": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
         "packagesPath": "C:\\Users\\Ermal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\obj\\",
+        "outputPath": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ermal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -125,6 +129,10 @@
             "Microsoft.AspNetCore.Mvc.ViewFeatures": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             }
           },
           "imports": [

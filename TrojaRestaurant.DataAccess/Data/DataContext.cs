@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using TrojaRestaurant.Models;
 using TrojaRestaurant.Models.Models;
 
 namespace TrojaRestaurant.DataAccess
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext
     {
         public DataContext()
         {
@@ -25,10 +26,10 @@ namespace TrojaRestaurant.DataAccess
         public DataContext(DbContextOptions options) : base(options) {}
         public DbSet<Category> Categories { get; set; }
         public DbSet<Meal> Meals { get; set; }
-        public DbSet<Menu> Menus { get; set; }
+        public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
-        //public DbSet<Test> Tests { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }    
         public object SingleOrDefault(Func<object, bool> value)
         {
             throw new NotImplementedException();

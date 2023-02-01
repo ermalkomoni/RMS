@@ -1,8 +1,93 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<Product>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container my-5 py-5 pb-4">
+        <!--<partial name="_CookieConsentPartial" />-->
+
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-3 text-white animated slideInLeft">Hungry?<br>You've come to the right place!</h1>
+                <p class="text-white animated slideInLeft mb-4 pb-2">From juicy burgers to mouth-watering pizza - we've got it all. All made using only the freshest ingredients from local markets.</p>
+                <a class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"<i class="fa-solid fa-calendar-check"></i> Book A Table</a>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                <img class="img-fluid" src="~/images/hero.png" asp-append-version="true">
+            </div>
+        </div>
+    </div>
 </div>
+
+
+<!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 " data-wow-delay="0.1s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                        <h5>Experienced Chefs</h5>
+                        <p>All of our employees have 20+ years of experince in the finest restaurants.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 " data-wow-delay="0.3s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                        <h5>Quality Food</h5>
+                        <p>We use only the best ingredients from local markets. An incredible gourmet experience everytime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 " data-wow-delay="0.5s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                        <h5>Online Orders</h5>
+                        <p>Thanks to our logistics team you can enjoy our meals from the comfort of your home.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 " data-wow-delay="0.7s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa-solid fa-3x fa-hand-holding-dollar text-primary mb-4"></i>
+                        <h5>Fast delivery</h5>
+                        <p>Moneyback guarantee if you don't receive you order within 60 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h1 class="display-3 animated  ">Dare to Give it a Try</h1>
+
+<div class="row pb-3">
+    @foreach(var product in Model)
+    {
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="row p-2">
+                <div class="col-12 p-1" style="border:3px solid #0F172B; border-radius: 5px;">
+                    <div class="card">
+                        <img src="@product.ImageUrl" class="card-img-top rounded"/>
+
+
+                        <div class="pl-1">
+                            <p class="card-title h5 text-primary text-center">@product.Title</p>
+                            @*<p class="card-title h8 text-info">@product.Description</p>*@
+                        </div>
+                        <div class="pl-1">
+                            <p class="text-center text-black"> List Price: <b>$@product.Price.ToString("0.00")</b></p>
+                        </div>
+                    </div>
+                    <div>
+                        <a asp-action="Details" class="btn btn-primary form-control bg-dark text-white"  asp-route-id="@product.Id">
+                            Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    }
+    </div>

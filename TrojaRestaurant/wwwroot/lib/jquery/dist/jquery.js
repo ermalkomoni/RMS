@@ -1057,7 +1057,7 @@ function createDisabledPseudo( disabled ) {
 			return elem.disabled === disabled;
 
 		// Try to winnow out elements that can't be disabled before trusting the disabled property.
-		// Some victims get caught in our net (label, legend, menu, track), but it shouldn't
+		// Some victims get caught in our net (label, legend, product, track), but it shouldn't
 		// even exist on them, let alone have a boolean value.
 		} else if ( "label" in elem ) {
 			return elem.disabled === disabled;
@@ -5091,7 +5091,7 @@ function buildFragment( elems, context, scripts, selection, ignored ) {
 
 var
 	rkeyEvent = /^key/,
-	rmouseEvent = /^(?:mouse|pointer|contextmenu|drag|drop)|click/,
+	rmouseEvent = /^(?:mouse|pointer|contextproduct|drag|drop)|click/,
 	rtypenamespace = /^([^.]*)(?:\.(.+)|)/;
 
 function returnTrue() {
@@ -10728,7 +10728,7 @@ jQuery.fn.extend( {
 
 jQuery.each( ( "blur focus focusin focusout resize scroll click dblclick " +
 	"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave " +
-	"change select submit keydown keypress keyup contextmenu" ).split( " " ),
+	"change select submit keydown keypress keyup contextproduct" ).split( " " ),
 	function( _i, name ) {
 
 		// Handle event binding

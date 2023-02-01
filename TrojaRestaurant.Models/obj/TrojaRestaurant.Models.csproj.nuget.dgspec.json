@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {}
+    "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {
+    "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
         "projectName": "TrojaRestaurant.Models",
-        "projectPath": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
+        "projectPath": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
         "packagesPath": "C:\\Users\\Ermal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ermal\\Source\\Repos\\TrojaRestaurant\\TrojaRestaurant.Models\\obj\\",
+        "outputPath": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ermal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Microsoft.AspNetCore.Mvc.ViewFeatures": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             }
           },
           "imports": [

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TrojaRestaurant.DataAccess;
 
-namespace TrojaRestaurant.Areas.Customer.Controllers
+namespace TrojaRestaurant.Areas.Admin.Controllers
 {
     public class ReservationController : Controller
     {
