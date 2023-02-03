@@ -10,3 +10,15 @@ C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net
 C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\refint\TrojaRestaurant.Models.dll
 C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.pdb
 C:\Users\Ermal\Source\Repos\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\ref\TrojaRestaurant.Models.dll
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\bin\Debug\net6.0\TrojaRestaurant.Models.deps.json
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\bin\Debug\net6.0\TrojaRestaurant.Models.dll
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\bin\Debug\net6.0\TrojaRestaurant.Models.pdb
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.csproj.AssemblyReference.cache
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.AssemblyInfoInputs.cache
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.AssemblyInfo.cs
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.csproj.CoreCompileInputs.cache
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.dll
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\refint\TrojaRestaurant.Models.dll
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.pdb
+C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\ref\TrojaRestaurant.Models.dll

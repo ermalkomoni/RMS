@@ -1,13 +1,13 @@
-﻿@model TrojaRestaurant.Models.ViewModels.ShoppingCart
+﻿@model TrojaRestaurant.Models.Models.ShoppingCart
 @{
     ViewData["Title"] = "Order Now";
 }
 
 <partial name="_HeroPartial" />
 <form method="post">
-    <input hidden asp-for="Product" />
-        <div class="card  container pt-4">
-            <div class="card-header bg-dark text-white ml-0  row ">
+    <input hidden asp-for="ProductId" />
+        <div class="card container p-4">
+            <div class="card-header bg-dark text-white row">
                 <div class="col-12 col-md-6">
                     <h1 class="text-white">@Model.Product.Title</h1>
                 </div>

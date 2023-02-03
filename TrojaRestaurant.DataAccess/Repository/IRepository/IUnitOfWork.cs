@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrojaRestaurant.Models.Models;
 
 namespace TrojaRestaurant.DataAccess.Repository.IRepository
 {
@@ -11,6 +12,8 @@ namespace TrojaRestaurant.DataAccess.Repository.IRepository
         ICategoryRepository Category { get; }
         IProductRepository Product { get; }
         IOrderRepository Order { get; }
+        IShoppingCartRepository ShoppingCart { get; }
+        IApplicationUserRepository ApplicationUser { get; }
         void Save();
     }
 }
