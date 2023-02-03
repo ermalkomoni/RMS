@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yWMM5lwue6MkE1ZKdWnfh+2nb+detXDak/N7VN1Edxk=",
+  "Hash": "+seMw1GO6v15SCnYn59YjmJRTWPs/ibvUUDx8vrZXL4=",
   "Source": "TrojaRestaurant",
   "BasePath": "_content/TrojaRestaurant",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\checked-box.png",
+      "SourceId": "TrojaRestaurant",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\",
+      "BasePath": "_content/TrojaRestaurant",
+      "RelativePath": "images/checked-box.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\checked-box.png"
     },
     {
       "Identity": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\hero.png",

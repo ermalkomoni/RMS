@@ -20,6 +20,7 @@ namespace TrojaRestaurant.Models.ViewModels
         public string ApplicationUserId { get; set; }
 
         public IEnumerable<ShoppingCart> ListCart { get; set; }
-        public double CartTotal { get; set; }
+        //public double CartTotal { get; set; }
+        public OrderHeader OrderHeader { get; set; }
     }
 }

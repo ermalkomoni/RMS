@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VEYdo+d8HG9Cmqvl0mpCIGs/4cstQPYg7baTU3ZQuzkur+4kn26A4KlE2GhPwixBjid3jgSAK/2iRghFFdDRhw==",
+  "dgSpecHash": "eSUALk/L757Vo28nb/fionuGxrd3/E/UsPg+eINvGe2vzUbmV7U15N7s1rQjbDTTMwHMwa2p9CVOxvg7O8uBAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant\\TrojaRestaurant.csproj",
   "expectedPackageFiles": [
@@ -143,6 +143,7 @@
     "C:\\Users\\Ermal\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\Ermal\\.nuget\\packages\\stripe.net\\41.6.0\\stripe.net.41.6.0.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Ermal\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

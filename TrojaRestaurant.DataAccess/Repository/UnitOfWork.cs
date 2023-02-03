@@ -20,12 +20,16 @@ namespace TrojaRestaurant.DataAccess.Repository
             Order = new OrderRepository(_context);                      //dbSet
             ApplicationUser = new ApplicationUserRepository(_context);
             ShoppingCart = new ShoppingCartRepository(_context);
+            OrderHeader = new OrderHeaderRepository(_context);
+            OrderDetail = new OrderDetailRepository(_context);
         }
         public ICategoryRepository Category { get; private set; }
         public IProductRepository Product { get; private set; }
         public IOrderRepository Order { get; private set; }
         public IShoppingCartRepository ShoppingCart { get; private set; }
         public IApplicationUserRepository ApplicationUser { get; private set; }
+        public IOrderHeaderRepository OrderHeader { get; private set; } 
+        public IOrderDetailRepository OrderDetail { get; private set; }
 
         public void Save()                                 //SaveChanges()
         {

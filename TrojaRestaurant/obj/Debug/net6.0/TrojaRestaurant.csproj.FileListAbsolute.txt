@@ -684,3 +684,4 @@ C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant\obj\Debug\net6.0\r
 C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant\obj\Debug\net6.0\TrojaRestaurant.pdb
 C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant\obj\Debug\net6.0\TrojaRestaurant.genruntimeconfig.cache
 C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant\obj\Debug\net6.0\ref\TrojaRestaurant.dll
+C:\Users\Ermal\source\repos\TrojaRestaurant\TrojaRestaurant\bin\Debug\net6.0\Stripe.net.dll
