@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿/*using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.AspNetCore.Builder;
 using TrojaRestaurant.Models;
@@ -17,7 +17,7 @@ namespace TrojaRestaurant.DataAccess
                 context.Database.EnsureCreated();
 
                 //Order
-                if (!context.Orders.Any())
+                *//*if (!context.Orders.Any())
                 {
                     context.Orders.AddRange(new List<Order>()
                     {
@@ -31,7 +31,7 @@ namespace TrojaRestaurant.DataAccess
                             Address = "Prishtine",
                             IsComplete = true
                         },
-                    });
+                    });*//*
                     //context.SaveChanges();
 
                     //Category
@@ -55,8 +55,9 @@ namespace TrojaRestaurant.DataAccess
 
                     //}
 
-                }
+                //}
             }
         }
     }
 }
+*/

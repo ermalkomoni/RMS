@@ -66,6 +66,6 @@ app.MapControllerRoute(
     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 //seed data
-DbInitializer.seed(app);
+//DbInitializer.seed(app);
 
 app.Run();

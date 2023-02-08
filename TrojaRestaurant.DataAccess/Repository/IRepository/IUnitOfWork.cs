@@ -11,7 +11,7 @@ namespace TrojaRestaurant.DataAccess.Repository.IRepository
     {
         ICategoryRepository Category { get; }
         IProductRepository Product { get; }
-        IOrderRepository Order { get; }
+        //IOrderRepository Order { get; }
         IShoppingCartRepository ShoppingCart { get; }
         IApplicationUserRepository ApplicationUser { get; }
         IOrderDetailRepository OrderDetail { get; }

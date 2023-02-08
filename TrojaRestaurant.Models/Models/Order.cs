@@ -4,7 +4,7 @@ namespace TrojaRestaurant.Models
 {
     public class Order
     {
-        public int Id { get; set; }
+/*        public int Id { get; set; }
 
         [Display(Name = "TotalPrice")]
         public double TotalPrice { get; set; }
@@ -19,7 +19,7 @@ namespace TrojaRestaurant.Models
         public string Address { get; set; }
 
         [Display(Name = "IsComplete")]
-        public bool IsComplete { get; set; }
+        public bool IsComplete { get; set; }*/
 
         //public DateTime? CompletedOn { get; set; }
 
