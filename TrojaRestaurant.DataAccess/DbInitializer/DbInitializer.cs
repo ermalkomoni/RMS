@@ -211,6 +211,6 @@ namespace TrojaRestaurant.DataAccess.DbInitializer
                 _context.SaveChanges();
 
             }
-        }
+        }   
     }
 }

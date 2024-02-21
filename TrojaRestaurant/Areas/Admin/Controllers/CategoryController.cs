@@ -1,14 +1,11 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using TrojaRestaurant.DataAccess;
 using TrojaRestaurant.DataAccess.Repository.IRepository;
 using TrojaRestaurant.Models;
-using TrojaRestaurant.Utility;
 
 namespace TrojaRestaurant.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = SD.Role_Admin)]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork; //in the course it's used "_db"

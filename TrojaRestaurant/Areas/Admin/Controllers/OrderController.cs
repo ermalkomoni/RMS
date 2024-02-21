@@ -113,14 +113,14 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult UpdateOrderDetail()
         {
-            var orderHEaderFromDb = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == OrderViewModel.OrderHeader.Id, tracked: false);
-            orderHEaderFromDb.Name = OrderViewModel.OrderHeader.Name;
-            orderHEaderFromDb.PhoneNumber = OrderViewModel.OrderHeader.PhoneNumber;
-            orderHEaderFromDb.StreetAddress = OrderViewModel.OrderHeader.StreetAddress;
-            orderHEaderFromDb.City = OrderViewModel.OrderHeader.City;
-            orderHEaderFromDb.State = OrderViewModel.OrderHeader.State;
-            orderHEaderFromDb.PostalCode = OrderViewModel.OrderHeader.PostalCode;
-            if (OrderViewModel.OrderHeader.Carrier != null)
+            var orderHeaderFromDb = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == OrderViewModel.OrderHeader.Id, tracked:false);
+            orderHeaderFromDb.Name = OrderViewModel.OrderHeader.Name;
+            orderHeaderFromDb.PhoneNumber = OrderViewModel.OrderHeader.PhoneNumber;
+            orderHeaderFromDb.StreetAddress = OrderViewModel.OrderHeader.StreetAddress;
+            orderHeaderFromDb.City = OrderViewModel.OrderHeader.City;
+            orderHeaderFromDb.State = OrderViewModel.OrderHeader.State;
+            orderHeaderFromDb.PostalCode = OrderViewModel.OrderHeader.PostalCode;
+            if(OrderViewModel.OrderHeader.Carrier != null)
             {
                 orderHEaderFromDb.Carrier = OrderViewModel.OrderHeader.Carrier;
             }
@@ -180,6 +180,7 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
                 };
 
                 var service = new RefundService();
+                //error
                 Refund refund = service.Create(options);
 
                 _unitOfWork.OrderHeader.UpdateStatus(orderHeader.Id, SD.StatusCancelled, SD.StatusRefunded);
