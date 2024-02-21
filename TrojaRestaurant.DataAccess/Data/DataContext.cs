@@ -7,32 +7,18 @@ namespace TrojaRestaurant.DataAccess
 {
     public class DataContext : IdentityDbContext
     {
-        public DataContext()
+        public DataContext(DbContextOptions options) : base(options) 
         {
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            if (!options.IsConfigured)
-            {
-                options.UseSqlServer("A FALLBACK CONNECTION STRING");
-            }
-        }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-        }
-
-        public DataContext(DbContextOptions options) : base(options) {}
         public DbSet<Category> Categories { get; set; }
         public DbSet<Meal> Meals { get; set; }
         public DbSet<Product> Products { get; set; }
         //public DbSet<Order> Orders { get; set; }
-        public DbSet<Reservation> Reservations { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public DbSet<OrderHeader> OrderHeaders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<Reservatiion> Reservatiions { get; set; }
         public object SingleOrDefault(Func<object, bool> value)
         {
             throw new NotImplementedException();

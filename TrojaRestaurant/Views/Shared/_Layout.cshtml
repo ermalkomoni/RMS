@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@using TrojaRestaurant.Utility
+@inject IHttpContextAccessor HttpContextAccessor
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -46,13 +49,30 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0 pe-4">
+                   
                     <a class="nav-item nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index">
-                        <i class="bi bi-cart"></i>
+                        @await Component.InvokeAsync("ShoppingCart")
                     </a>
+
+                    <li class="nav-item">
                     <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    <a class="nav-item nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-item nav-link" asp-area="Admin" asp-controller="Order" asp-action="Index">Order</a>
+                    </li>
+
+                    @if(User.IsInRole(SD.Role_Admin))
+                    {
+                    <li class="nav-item">
+                    <a class="nav-item nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-item nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a>
+                    </li>
+                    }
                     <partial name="_LoginPartial" />
                 </div>
             </div>
@@ -66,6 +86,9 @@
             @RenderBody()
         </main>
     </div>
+
+    <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <footer class="border-top footer text-muted bg-dark">
         <div class="container">
@@ -101,7 +124,7 @@
     <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <!-- Adding Rich Editor-->
-    <script src="https://cdn.tiny.cloud/1/uboaovix0agqmng7hf9cxnwvsc9ji8tb7jqj4qu9cglb9urz/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/6opnfwmwpj95joecwstqmweep322up1uuhwutnhmdvbd24g8/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

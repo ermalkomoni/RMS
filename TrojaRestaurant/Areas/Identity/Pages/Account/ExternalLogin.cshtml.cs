@@ -17,6 +17,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using TrojaRestaurant.Models.Models;
+using TrojaRestaurant.Utility;
 
 namespace TrojaRestaurant.Areas.Identity.Pages.Account
 {
@@ -84,6 +86,12 @@ namespace TrojaRestaurant.Areas.Identity.Pages.Account
             [Required]
             [EmailAddress]
             public string Email { get; set; }
+            public string Name { get; set; }
+            public string? StreetAdress { get; set; }
+            public string? City { get; set; }
+            public string? State { get; set; }
+            public string? PostalCode { get; set; }
+            public string? PhoneNumber { get; set; }
         }
         
         public IActionResult OnGet() => RedirectToPage("./Login");
@@ -131,6 +139,7 @@ namespace TrojaRestaurant.Areas.Identity.Pages.Account
                 {
                     Input = new InputModel
                     {
+                        Name = info.Principal.FindFirstValue(ClaimTypes.Name),
                         Email = info.Principal.FindFirstValue(ClaimTypes.Email)
                     };
                 }
@@ -155,10 +164,16 @@ namespace TrojaRestaurant.Areas.Identity.Pages.Account
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
-
+                user.Name = Input.Name;
+                user.PhoneNumber = Input.PhoneNumber;
+                user.StreetAdress = Input.StreetAdress;
+                user.City = Input.City;
+                user.State = Input.State;
+                user.PostalCode = Input.PostalCode;
                 var result = await _userManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
+                    await _userManager.AddToRoleAsync(user, SD.Role_User);
                     result = await _userManager.AddLoginAsync(user, info);
                     if (result.Succeeded)
                     {
@@ -197,11 +212,11 @@ namespace TrojaRestaurant.Areas.Identity.Pages.Account
             return Page();
         }
 
-        private IdentityUser CreateUser()
+        private ApplicationUser CreateUser()
         {
             try
             {
-                return Activator.CreateInstance<IdentityUser>();
+                return Activator.CreateInstance<ApplicationUser>();
             }
             catch
             {

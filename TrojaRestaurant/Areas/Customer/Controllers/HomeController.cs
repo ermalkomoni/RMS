@@ -6,6 +6,7 @@ using TrojaRestaurant.DataAccess.Repository.IRepository;
 using TrojaRestaurant.Models;
 using TrojaRestaurant.Models.Models;
 using TrojaRestaurant.Models.ViewModels;
+using TrojaRestaurant.Utility;
 
 namespace TrojaRestaurant.Areas.Admin.Controllers
 {
@@ -54,14 +55,22 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
             if (cartFromDb == null)
             {
                 _unitOfWork.ShoppingCart.Add(shoppingCart);
+                _unitOfWork.Save();
+                //counting items in shopping cart
+                HttpContext.Session.SetInt32(SD.SessionCart,
+                    _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == claim.Value).ToList().Count);
             }
             else
             {
-                _unitOfWork.ShoppingCart.IncrementCount(cartFromDb, shoppingCart.Count); 
+                _unitOfWork.ShoppingCart.IncrementCount(cartFromDb, shoppingCart.Count);
+                _unitOfWork.Save();
             }
-            _unitOfWork.Save();
             return RedirectToAction(nameof(Index));
 
+        }
+        public IActionResult About()
+        {
+            return this.View();
         }
         public IActionResult Privacy()
         {

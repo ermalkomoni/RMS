@@ -1,14 +1,17 @@
 ﻿using DocumentFormat.OpenXml.Drawing.Charts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using TrojaRestaurant.DataAccess;
 using TrojaRestaurant.DataAccess.Repository.IRepository;
 using TrojaRestaurant.Models;
 using TrojaRestaurant.Models.ViewModels;
+using TrojaRestaurant.Utility;
 
 namespace TrojaRestaurant.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork; //in the course it's used "_db"

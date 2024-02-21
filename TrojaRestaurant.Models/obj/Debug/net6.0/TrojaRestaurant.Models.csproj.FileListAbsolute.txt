@@ -22,3 +22,15 @@ C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\n
 C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\refint\TrojaRestaurant.Models.dll
 C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.pdb
 C:\Users\Ermal\source\repos\2\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\ref\TrojaRestaurant.Models.dll
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\bin\Debug\net6.0\TrojaRestaurant.Models.deps.json
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\bin\Debug\net6.0\TrojaRestaurant.Models.dll
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\bin\Debug\net6.0\TrojaRestaurant.Models.pdb
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.csproj.AssemblyReference.cache
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.AssemblyInfoInputs.cache
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.AssemblyInfo.cs
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.csproj.CoreCompileInputs.cache
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.dll
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\refint\TrojaRestaurant.Models.dll
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\TrojaRestaurant.Models.pdb
+C:\Users\spinp\OneDrive\Desktop\TrojaRestaurant\TrojaRestaurant.Models\obj\Debug\net6.0\ref\TrojaRestaurant.Models.dll

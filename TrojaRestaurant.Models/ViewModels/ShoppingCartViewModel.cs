@@ -9,7 +9,7 @@ namespace TrojaRestaurant.Models.ViewModels
 {
     public class ShoppingCartViewModel
     {
-        public string Title { get; set; }
+        /*public string Title { get; set; }
 
         public string Description { get; set; }
         public double Price { get; set; }
@@ -17,7 +17,7 @@ namespace TrojaRestaurant.Models.ViewModels
         public Product Product { get; set; }
         public int Count { get; set; }
         public int ProductId { get; set; }
-        public string ApplicationUserId { get; set; }
+        public string ApplicationUserId { get; set; }*/
 
         public IEnumerable<ShoppingCart> ListCart { get; set; }
         //public double CartTotal { get; set; }

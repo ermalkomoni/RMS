@@ -43,7 +43,6 @@ namespace TrojaRestaurant.Areas.Customer.Controllers
             }
             return View(ShoppingCartViewModel);
         }
-
         public IActionResult Summary()
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
@@ -74,6 +73,7 @@ namespace TrojaRestaurant.Areas.Customer.Controllers
             }
             return View(ShoppingCartViewModel);
         }
+
 
         [HttpPost]
         [ActionName("Summary")]
@@ -163,7 +163,7 @@ namespace TrojaRestaurant.Areas.Customer.Controllers
         //Order Confirmation
         public IActionResult OrderConfirmation(int id)
         {
-            OrderHeader orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == id);
+            OrderHeader orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == id, includeProperties:"ApplicationUser");
             if (orderHeader.PaymentStatus != SD.PaymentStatusDelayedPayment)
             {
                 var service = new SessionService();
@@ -171,7 +171,7 @@ namespace TrojaRestaurant.Areas.Customer.Controllers
                 //check the stripe status
                 if (session.PaymentStatus.ToLower() == "paid")
                 {
-                    _unitOfWork.OrderHeader.UpdateStripePaymentId(id, orderHeader.SessionId, session.PaymentIntentId);
+                    _unitOfWork.OrderHeader.UpdateStripePaymentId(id, orderHeader.SessionId, session.PaymentIntentId);//
                     _unitOfWork.OrderHeader.UpdateStatus(id, SD.StatusApproved, SD.PaymentStatusApproved);
                     _unitOfWork.Save();
                 }
@@ -179,7 +179,7 @@ namespace TrojaRestaurant.Areas.Customer.Controllers
             
             List<ShoppingCart> shoppingCarts = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId ==
             orderHeader.ApplicationUserId).ToList();
-            //HttpContext.Session.Clear();
+            HttpContext.Session.Clear();
             _unitOfWork.ShoppingCart.RemoveRange(shoppingCarts);
             _unitOfWork.Save();
             return View(id);
@@ -201,6 +201,9 @@ namespace TrojaRestaurant.Areas.Customer.Controllers
             if(cart.Count <= 1)
             {
                 _unitOfWork.ShoppingCart.Remove(cart);
+                //decrementing from shopping cart icon
+                var count = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cart.ApplicationUserId).ToList().Count-1;
+                HttpContext.Session.SetInt32(SD.SessionCart, count);
             }
             else 
             {
@@ -216,6 +219,9 @@ namespace TrojaRestaurant.Areas.Customer.Controllers
             var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(u => u.Id == cartId);
             _unitOfWork.ShoppingCart.Remove(cart);
             _unitOfWork.Save();
+            //decrementing from shopping cart icon
+            var count = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cart.ApplicationUserId).ToList().Count;
+            HttpContext.Session.SetInt32(SD.SessionCart, count);
             return RedirectToAction(nameof(Index));
         }
 

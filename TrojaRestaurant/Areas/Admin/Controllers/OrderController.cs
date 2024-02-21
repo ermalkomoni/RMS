@@ -29,6 +29,7 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
         {
             return View();
         }
+
         public IActionResult Details(int orderId)
         {
             OrderViewModel = new OrderViewModel()
@@ -48,7 +49,7 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
             OrderViewModel.OrderDetail = _unitOfWork.OrderDetail.GetAll(u => u.OrderId == OrderViewModel.OrderHeader.Id, includeProperties: "Product");
 
             //stripe settings 
-            var domain = "https://localhost:7247/";
+            var domain = "https://localhost:44300/";
             var options = new SessionCreateOptions
             {
                 PaymentMethodTypes = new List<string>
@@ -90,7 +91,6 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
             return new StatusCodeResult(303);
         }
 
-        //PAYMENT CONFIRMATION
         public IActionResult PaymentConfirmation(int orderHeaderid)
         {
             OrderHeader orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == orderHeaderid);
@@ -108,50 +108,47 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
             return View(orderHeaderid);
         }
 
-
         [HttpPost]
         [Authorize(Roles = SD.Role_Admin)]
         [ValidateAntiForgeryToken]
-        public IActionResult UpdateOrderDetail(int orderId)
+        public IActionResult UpdateOrderDetail()
         {
-            var orderHeaderFromDb = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == OrderViewModel.OrderHeader.Id, tracked:false);
-            orderHeaderFromDb.Name = OrderViewModel.OrderHeader.Name;
-            orderHeaderFromDb.PhoneNumber = OrderViewModel.OrderHeader.PhoneNumber;
-            orderHeaderFromDb.StreetAddress = OrderViewModel.OrderHeader.StreetAddress;
-            orderHeaderFromDb.City = OrderViewModel.OrderHeader.City;
-            orderHeaderFromDb.State = OrderViewModel.OrderHeader.State;
-            orderHeaderFromDb.PostalCode = OrderViewModel.OrderHeader.PostalCode;
-            if(OrderViewModel.OrderHeader.Carrier != null)
+            var orderHEaderFromDb = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == OrderViewModel.OrderHeader.Id, tracked: false);
+            orderHEaderFromDb.Name = OrderViewModel.OrderHeader.Name;
+            orderHEaderFromDb.PhoneNumber = OrderViewModel.OrderHeader.PhoneNumber;
+            orderHEaderFromDb.StreetAddress = OrderViewModel.OrderHeader.StreetAddress;
+            orderHEaderFromDb.City = OrderViewModel.OrderHeader.City;
+            orderHEaderFromDb.State = OrderViewModel.OrderHeader.State;
+            orderHEaderFromDb.PostalCode = OrderViewModel.OrderHeader.PostalCode;
+            if (OrderViewModel.OrderHeader.Carrier != null)
             {
-                orderHeaderFromDb.Carrier = OrderViewModel.OrderHeader.Carrier;
+                orderHEaderFromDb.Carrier = OrderViewModel.OrderHeader.Carrier;
             }
             if (OrderViewModel.OrderHeader.TrackingNumber != null)
             {
-                orderHeaderFromDb.Carrier = OrderViewModel.OrderHeader.TrackingNumber;
+                orderHEaderFromDb.TrackingNumber = OrderViewModel.OrderHeader.TrackingNumber;
             }
-            _unitOfWork.OrderHeader.Update(orderHeaderFromDb);
+            _unitOfWork.OrderHeader.Update(orderHEaderFromDb);
             _unitOfWork.Save();
-            TempData["Success"] = "Order Details Updated Successfully";
-            return RedirectToAction("Details", "Order", new { orderId = orderHeaderFromDb.Id });
+            TempData["Success"] = "Order Details Updated Successfully.";
+            return RedirectToAction("Details", "Order", new { orderId = orderHEaderFromDb.Id });
         }
 
-        //update order status
         [HttpPost]
         [Authorize(Roles = SD.Role_Admin)]
         [ValidateAntiForgeryToken]
-        public IActionResult StartProcessing(int orderId)
+        public IActionResult StartProcessing()
         {
             _unitOfWork.OrderHeader.UpdateStatus(OrderViewModel.OrderHeader.Id, SD.StatusInProcess);
             _unitOfWork.Save();
-            TempData["Success"] = "Order Status Updated Successfully";
+            TempData["Success"] = "Order Status Updated Successfully.";
             return RedirectToAction("Details", "Order", new { orderId = OrderViewModel.OrderHeader.Id });
         }
 
-        //ship order
         [HttpPost]
         [Authorize(Roles = SD.Role_Admin)]
         [ValidateAntiForgeryToken]
-        public IActionResult ShipOrder(int orderId)
+        public IActionResult ShipOrder()
         {
             var orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == OrderViewModel.OrderHeader.Id, tracked: false);
             orderHeader.TrackingNumber = OrderViewModel.OrderHeader.TrackingNumber;
@@ -160,22 +157,21 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
             orderHeader.ShippingDate = DateTime.Now;
             if (orderHeader.PaymentStatus == SD.PaymentStatusDelayedPayment)
             {
-                orderHeader.PaymentDueDate = DateTime.Now.AddDays(14);
+                orderHeader.PaymentDueDate = DateTime.Now.AddDays(30);
             }
-            _unitOfWork.OrderHeader.Update(orderHeader); 
+            _unitOfWork.OrderHeader.Update(orderHeader);
             _unitOfWork.Save();
-            TempData["Success"] = "Order Shipped Successfully";
+            TempData["Success"] = "Order Shipped Successfully.";
             return RedirectToAction("Details", "Order", new { orderId = OrderViewModel.OrderHeader.Id });
         }
 
-        //ship order
         [HttpPost]
         [Authorize(Roles = SD.Role_Admin)]
         [ValidateAntiForgeryToken]
-        public IActionResult CanelOrder(int orderId)
+        public IActionResult CancelOrder()
         {
             var orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == OrderViewModel.OrderHeader.Id, tracked: false);
-            if(orderHeader.PaymentStatus == SD.PaymentStatusApproved)
+            if (orderHeader.PaymentStatus == SD.PaymentStatusApproved)
             {
                 var options = new RefundCreateOptions
                 {
@@ -194,26 +190,25 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
             }
             _unitOfWork.Save();
 
-            TempData["Success"] = "Order Cancelled Successfully";
+            TempData["Success"] = "Order Cancelled Successfully.";
             return RedirectToAction("Details", "Order", new { orderId = OrderViewModel.OrderHeader.Id });
         }
 
-        //adding WEB API
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll(string status)
         {
             IEnumerable<OrderHeader> orderHeaders;
+
             if (User.IsInRole(SD.Role_Admin))
             {
-            orderHeaders = _unitOfWork.OrderHeader.GetAll(includeProperties: "ApplicationUser");
+                orderHeaders = _unitOfWork.OrderHeader.GetAll(includeProperties: "ApplicationUser");
             }
             else
             {
                 var claimsIdentity = (ClaimsIdentity)User.Identity;
                 var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-                orderHeaders = _unitOfWork.OrderHeader.GetAll(u=>u.ApplicationUserId==claim.Value,includeProperties: "ApplicationUser");
-
+                orderHeaders = _unitOfWork.OrderHeader.GetAll(u => u.ApplicationUserId == claim.Value, includeProperties: "ApplicationUser");
             }
 
             switch (status)
@@ -234,9 +229,9 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
                     break;
             }
 
+
             return Json(new { data = orderHeaders });
         }
         #endregion
-
     }
 }

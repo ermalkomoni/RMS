@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {}
+    "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {
+    "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
+        "projectUniqueName": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
         "projectName": "TrojaRestaurant.Models",
-        "projectPath": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
-        "packagesPath": "C:\\Users\\Ermal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ermal\\source\\repos\\TrojaRestaurant\\TrojaRestaurant.Models\\obj\\",
+        "projectPath": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant.Models\\TrojaRestaurant.Models.csproj",
+        "packagesPath": "C:\\Users\\spinp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant.Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ermal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\spinp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,13 +45,25 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.5.0, )"
             }
           },
           "imports": [
@@ -55,7 +72,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

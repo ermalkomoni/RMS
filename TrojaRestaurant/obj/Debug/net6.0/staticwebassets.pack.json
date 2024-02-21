@@ -1,0 +1,509 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TrojaRestaurant.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TrojaRestaurant.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\Beef-burger.jpg",
+      "PackagePath": "staticwebassets\\images\\Beef-burger.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\Chicken-Salad-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Chicken-Salad-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\Chicken-Sandwich.jpg",
+      "PackagePath": "staticwebassets\\images\\Chicken-Sandwich.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\Hebs-Chicken-Burger-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Hebs-Chicken-Burger-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\Hot-Amigos-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Hot-Amigos-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\MOZZARELLA-STICKS.jpg",
+      "PackagePath": "staticwebassets\\images\\MOZZARELLA-STICKS.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\Tenders-in-Mexico-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Tenders-in-Mexico-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\about-1.jpg",
+      "PackagePath": "staticwebassets\\images\\about-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\about-2.jpg",
+      "PackagePath": "staticwebassets\\images\\about-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\about-3.jpg",
+      "PackagePath": "staticwebassets\\images\\about-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\about-4.jpg",
+      "PackagePath": "staticwebassets\\images\\about-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\bbq-burger.jpg",
+      "PackagePath": "staticwebassets\\images\\bbq-burger.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\bg-hero.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-hero.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\bucket-of-wings-hebs.jpg",
+      "PackagePath": "staticwebassets\\images\\bucket-of-wings-hebs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\checked-box.png",
+      "PackagePath": "staticwebassets\\images\\checked-box.png"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\hero.png",
+      "PackagePath": "staticwebassets\\images\\hero.png"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\kids-box.jpg",
+      "PackagePath": "staticwebassets\\images\\kids-box.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\love-burger.jpg",
+      "PackagePath": "staticwebassets\\images\\love-burger.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\pizza-mix.jpg",
+      "PackagePath": "staticwebassets\\images\\pizza-mix.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\pizza-peperoni.jpg",
+      "PackagePath": "staticwebassets\\images\\pizza-peperoni.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\035b8900-44a1-43b8-9398-eaca70e4327d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\035b8900-44a1-43b8-9398-eaca70e4327d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\0b51c6b0-c55b-4045-afee-5b0a498bbf0b.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0b51c6b0-c55b-4045-afee-5b0a498bbf0b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\1588b130-cd75-4afa-a9ca-bd08bcc11c6c.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1588b130-cd75-4afa-a9ca-bd08bcc11c6c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\170526af-5842-40a2-b82f-e4d74d4d36db.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\170526af-5842-40a2-b82f-e4d74d4d36db.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\1e6ddab2-6e5a-45fe-bf62-56686eaa0ddb.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1e6ddab2-6e5a-45fe-bf62-56686eaa0ddb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\28c2d2b6-99b4-4989-9ed0-ea01e7ddba0f.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\28c2d2b6-99b4-4989-9ed0-ea01e7ddba0f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\2b8a11ae-77ad-4b6e-819e-40837d6752b1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\2b8a11ae-77ad-4b6e-819e-40837d6752b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\32f8a1bb-82a1-45ba-b786-9ec71667419e.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\32f8a1bb-82a1-45ba-b786-9ec71667419e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\3c4cd465-6481-4436-bf0c-05a017081fba.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3c4cd465-6481-4436-bf0c-05a017081fba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\42fe75db-51e6-4cac-bfc3-9de53b15a4b6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\42fe75db-51e6-4cac-bfc3-9de53b15a4b6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\4c5eafbc-0f8e-4a53-ac39-edb8f5479067.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\4c5eafbc-0f8e-4a53-ac39-edb8f5479067.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\5df63961-a561-49d5-94b6-c5576bda4b82.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\5df63961-a561-49d5-94b6-c5576bda4b82.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\6641865e-c6ae-4c19-afd2-06f15db2749e.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\6641865e-c6ae-4c19-afd2-06f15db2749e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\a0ed9367-e4c5-4a9b-b88c-0ca09f9dbf25.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a0ed9367-e4c5-4a9b-b88c-0ca09f9dbf25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\b169cef7-e3d9-480d-b964-75bed54126e1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b169cef7-e3d9-480d-b964-75bed54126e1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\b3f9c53c-7aaf-4b63-85e6-be85b71b3092.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b3f9c53c-7aaf-4b63-85e6-be85b71b3092.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\b46b3cfe-9a73-42af-960f-0530f1fa2408.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b46b3cfe-9a73-42af-960f-0530f1fa2408.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\d06aa6bd-aa01-49ce-8ffc-352cf37380df.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\d06aa6bd-aa01-49ce-8ffc-352cf37380df.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\e01a9f16-baa5-44ff-b1ac-f15dfca236e0.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\e01a9f16-baa5-44ff-b1ac-f15dfca236e0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\ee3f9089-c1ea-4c95-9347-6e772227b3e0.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\ee3f9089-c1ea-4c95-9347-6e772227b3e0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\ef49ef6e-2983-4173-994c-0db48b8d7fef.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\ef49ef6e-2983-4173-994c-0db48b8d7fef.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\fbd21b84-81fd-4e8d-96e1-c81d66d82a38.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\fbd21b84-81fd-4e8d-96e1-c81d66d82a38.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\products\\fbe367d5-543f-4161-88b5-8989b3aaeae4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\fbe367d5-543f-4161-88b5-8989b3aaeae4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\team-1.jpg",
+      "PackagePath": "staticwebassets\\images\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\team-2.jpg",
+      "PackagePath": "staticwebassets\\images\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\team-3.jpg",
+      "PackagePath": "staticwebassets\\images\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\images\\team-4.jpg",
+      "PackagePath": "staticwebassets\\images\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\animate\\animate.min.css",
+      "PackagePath": "staticwebassets\\lib\\animate\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\counterup\\counterup.min.js",
+      "PackagePath": "staticwebassets\\lib\\counterup\\counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\spinp\\OneDrive\\Desktop\\TrojaRestaurant\\TrojaRestaurant\\wwwroot\\lib\\wow\\wow.min.js",
+      "PackagePath": "staticwebassets\\lib\\wow\\wow.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TrojaRestaurant.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TrojaRestaurant.props",
+      "PackagePath": "build\\TrojaRestaurant.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TrojaRestaurant.props",
+      "PackagePath": "buildMultiTargeting\\TrojaRestaurant.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TrojaRestaurant.props",
+      "PackagePath": "buildTransitive\\TrojaRestaurant.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
