@@ -122,16 +122,16 @@ namespace TrojaRestaurant.Areas.Admin.Controllers
             orderHeaderFromDb.PostalCode = OrderViewModel.OrderHeader.PostalCode;
             if(OrderViewModel.OrderHeader.Carrier != null)
             {
-                orderHEaderFromDb.Carrier = OrderViewModel.OrderHeader.Carrier;
+                orderHeaderFromDb.Carrier = OrderViewModel.OrderHeader.Carrier;
             }
             if (OrderViewModel.OrderHeader.TrackingNumber != null)
             {
-                orderHEaderFromDb.TrackingNumber = OrderViewModel.OrderHeader.TrackingNumber;
+                orderHeaderFromDb.TrackingNumber = OrderViewModel.OrderHeader.TrackingNumber;
             }
-            _unitOfWork.OrderHeader.Update(orderHEaderFromDb);
+            _unitOfWork.OrderHeader.Update(orderHeaderFromDb);
             _unitOfWork.Save();
             TempData["Success"] = "Order Details Updated Successfully.";
-            return RedirectToAction("Details", "Order", new { orderId = orderHEaderFromDb.Id });
+            return RedirectToAction("Details", "Order", new { orderId = orderHeaderFromDb.Id });
         }
 
         [HttpPost]
