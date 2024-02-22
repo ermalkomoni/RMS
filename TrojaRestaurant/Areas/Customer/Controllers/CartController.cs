@@ -115,7 +115,7 @@ namespace TrojaRestaurant.Areas.Customer.Controllers
             }
 
             //Stripe Settings
-            var domain = "https://localhost:7247/";
+            var domain = "https://trojarestaurant.azurewebsites.net/";
             var options = new SessionCreateOptions
             {
                 PaymentMethodTypes = new List<string>
