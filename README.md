@@ -27,6 +27,11 @@ The application is hosted on Azure and can be accessed via the following link: [
 - **Stripe API**: For secure payment processing.
 - **Twilio API**: For sending notifications to users.
 
+## **Architecture and Design Patterns**
+
+- **N-tier Architecture**: The application follows an N-tier architecture, separating the presentation layer, business logic layer, and data access layer for better maintainability and scalability.
+- **Unit of Work**: The application uses the Unit of Work pattern to manage transactions and ensure data consistency.
+
 ## **Getting Started**
 
 To run the application locally, follow these steps:
