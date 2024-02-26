@@ -36,7 +36,7 @@ The application is hosted on Azure and can be accessed via the following link: [
 
 To run the application locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/troja-restaurant.git`
+1. Clone the repository: `git clone https://github.com/ermalkomoni/RMS`
 2. Navigate to the project directory: `cd troja-restaurant`
 3. Install dependencies: `dotnet restore`
 4. Build the project: `dotnet build`
