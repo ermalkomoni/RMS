@@ -6,7 +6,7 @@
 
 ## **Live URL**
 
-The application is hosted on Azure and can be accessed via the following link: [Troja Restaurant](https://trojarestaurant.azurewebsites.net/)
+The application is hosted on Azure and can be accessed via the following link: [Troja Restaurant](https://troja.azurewebsites.net/)
 
 ## **Features**
 
